@@ -1,0 +1,104 @@
+@import 'bootstrap/bootstrap';
+@import 'variables';
+@import 'mixins';
+
+
+html {
+    font-size: 18px;
+    @media screen and (max-width: 900px) {
+        font-size: 16px;
+    }
+}
+
+
+section {
+    padding: calc(2rem + .75vw) 0;
+    margin: 1rem 0;
+}
+
+
+// to color svg 
+@each $color, $value in $theme-colors {
+    .fill-#{$color} {
+      fill: $value;
+    }
+}
+
+
+.btn-lg {
+    @include tr;
+    @include hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in;
+    }
+}
+
+// nav-bg
+.bg-light {
+    opacity: .9;
+}
+
+.navbar {
+    padding-bottom: 0;
+}
+
+.cover {
+    position: relative;
+}
+
+// .sorter {
+//     @include posA($top: 0%, $left: 50%, $delta_x: -50%, $delta_y: -50%);
+//     bottom: auto;
+//     width: 100%;
+// }
+
+.card-img__wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    overflow: hidden;  
+    &-brand {
+        padding-top: 50%;
+    }
+}
+.card__img{
+    min-width: 100%;
+    min-height: 100%;
+    @include posA;
+
+@include hover {  
+        @include tr;
+        transform: translate(-50%, -50%) scale(1.2);   
+    }
+}
+
+.title-height {
+    max-height: 48px;
+    overflow: hidden;
+}
+
+.properties{
+    position: relative;
+    &:before, 
+    &:after {
+        content: '';
+        @include posA($top: 0, $left: 0, $delta_x: 0, $delta_y: 0);
+        width: 100%;
+        border-top: $border-width solid $gray-light
+    }
+    &:after {
+        top: auto;
+        bottom: 0;
+    }
+}
+
+.sale-sign {
+    @include posA($top: -2%, $left: -4%, $delta_x: null, $delta_y: null);
+    z-index: 100;
+}
+
+.price-former {
+    margin-top: -10px;
+}
+
+
