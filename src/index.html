@@ -96,7 +96,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="img card__img img-fluid" alt="Batman Lego Constructor">
@@ -128,17 +128,16 @@
                 </div>
                 <div class="d-flex flex-row justify-content-between align-items-baseline mt-2 px-1">
                     <div class="price">
-                      <span class="text-danger font-weight-bold">1 120</span>
+                      <span class="text-danger font-weight-bold">1 120000</span>
                       <span class="text-danger small font-weight-light align-top">грн</span>
                     </div>
                     <div>
-                        <button v-on:click="addA('first')" class="btn btn-link"> 
-                          <svg class="fill-success" width="20" height="20">
+                        <button @click="addA, addS" class="btn btn-link"> 
+                          <svg class="like" width="20" height="20">
                             <use xlink:href="#heart"></use>
                           </svg>
                         </button>
-                        <span :class="{active:first}">{{a.first}}</span>
-                        <button @click="addB" class="btn btn-link">
+                        <button @click="addB()" class="btn btn-link">
                           <svg class="fill-black" width="20" height="20">
                             <use xlink:href="#cart"></use>
                           </svg> 
@@ -154,7 +153,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="card-img-top card__img img-fluid" alt="Batman Lego Constructor">
@@ -190,12 +189,11 @@
                       <span class="text-danger small font-weight-light align-top">грн</span>
                     </div>
                     <div>
-                        <button v-on:click="addA('second')" class="btn btn-link"> 
+                        <button @click="addA" class="btn btn-link"> 
                           <svg class="fill-success" width="20" height="20">
                             <use xlink:href="#heart"></use>
                           </svg>
                         </button>
-                        <span>{{a.second}}</span>
                         <button @click="addB" class="btn btn-link">
                           <svg class="fill-black" width="20" height="20">
                             <use xlink:href="#cart"></use>
@@ -212,7 +210,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="card-img-top card__img img-fluid" alt="Batman Lego Constructor">
@@ -269,7 +267,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="card-img-top card__img img-fluid" alt="Batman Lego Constructor">
@@ -531,7 +529,7 @@
       //= partials/sprite.html
       //= partials/foot.html
 
-      <script src="nouislider.js"></script>
+
 
 </body>
 </html>

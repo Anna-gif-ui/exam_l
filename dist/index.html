@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link href="nouislider.css" rel="stylesheet">
     <title>Home. BANG TOY SHOP</title>
 
 </head>
@@ -17,73 +16,77 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
                  
                     <a class="navbar-brand" href="">
-                      <img src="img/Logo.svg" width="105" height="105" alt="BANG Toy Shop" loading="lazy">
+                      <h1><img src="img/Logo.svg" width="105" height="105" alt="BANG Toy Shop" loading="lazy"></h1>
                     </a>
+                    
+                    <div class="d-flex flex-column flex-lg-row flex-grow-1 justify-content-between">
+                      
+                      <div class="d-flex flex-column">
+                          
+                        <div class="collapse navbar-collapse mb-2 " id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Каталог товаров</a>
+                            <a class="nav-link" href="#">Оплата</a>
+                            <a class="nav-link" href="#">Доставка</a>
+                            <a class="nav-link" href="#">Контакты</a>
+                          </div>
+                        </div>
+                          
+                        <div class="d-flex flex-row align-items-lg-center justify-content-md-between">
+        
+                          <div class="input-group mr-3">
+                            <input type="text" class="form-control px-3" placeholder="Поиск" aria-label="Search" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-gray-light btn-rounded px-3" type="button" id="button-addon2">
+                              <svg class="fill-dark" width="16" height="16">
+                                <use xlink:href="#search"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          
+                          <div class="dropdown">
+                            <a class="btn-link dropdown-toggle text-success" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                              (067) 566-66-66
+                            </a>
+                              
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="tel:+380675664045" >(067) 566-66-66</a></li>
+                              <li><a class="dropdown-item" href="tel:+380985664045" >(098) 566-66-66</a></li>
+                              <li><a class="dropdown-item" href="tel:+380505664045" >(050) 566-66-66</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="d-flex flex-lg-column lh-lg flex-md-row justify-content-md-end">
+                        <button class="btn btn-link text-black mb-3" type="button" id="button-addon2">
+                          <svg class="fill-black mr-1" width="18" height="18">
+                            <use xlink:href="#login"></use>
+                          </svg>
+                          Личный кабинет
+                        </button>
+                        <div class="d-flex flex-row align-items-baseline">
+                        <div class="px-3">
+                          <svg class="fill-success" width="20" height="20">
+                            <use xlink:href="#heart"></use>
+                          </svg>
+                          <span class="mx-2">|</span>
+                          <span class="like"> {{a}} </span>
+                        </div>
+        
+                        <div class="ml-4">
+                          <svg class="fill-black" width="20" height="20">
+                            <use xlink:href="#cart"></use>
+                          </svg>
+                          <span class="mx-2">|</span>
+                          <span class="buy"> {{b}} </span>
+                        </div>
+                        
+                        </div>
+                      </div>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="d-flex flex-column">
-                        
-                      <div class="collapse navbar-collapse mb-2 " id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                          <a class="nav-link active" aria-current="page" href="#">Каталог товаров</a>
-                          <a class="nav-link" href="#">Оплата</a>
-                          <a class="nav-link" href="#">Доставка</a>
-                          <a class="nav-link" href="#">Контакты</a>
-                        </div>
-                      </div>
-                        
-                      <div class="d-flex flex-row align-items-lg-center justify-content-md-between">
-      
-                        <div class="input-group mr-3">
-                          <input type="text" class="form-control px-3" placeholder="Поиск" aria-label="Search" aria-describedby="button-addon2">
-                          <button class="btn btn-outline-gray-light btn-rounded px-3" type="button" id="button-addon2">
-                            <svg class="fill-dark" width="16" height="16">
-                              <use xlink:href="#search"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        
-                        <div class="dropdown">
-                          <a class="btn-link dropdown-toggle text-success" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                            (067) 566-66-66
-                          </a>
-                            
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="tel:+380675664045" >(067) 566-66-66</a></li>
-                            <li><a class="dropdown-item" href="tel:+380985664045" >(098) 566-66-66</a></li>
-                            <li><a class="dropdown-item" href="tel:+380505664045" >(050) 566-66-66</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-      
-                    <div class="d-flex flex-lg-column lh-lg flex-md-row justify-content-md-end">
-                      <button class="btn btn-link text-black mb-3" type="button" id="button-addon2">
-                        <svg class="fill-black mr-1" width="18" height="18">
-                          <use xlink:href="#login"></use>
-                        </svg>
-                        Личный кабинет
-                      </button>
-                      <div class="d-flex flex-row align-items-baseline">
-                      <div class="px-3">
-                        <svg class="fill-success" width="20" height="20">
-                          <use xlink:href="#heart"></use>
-                        </svg>
-                        <span class="mx-2">|</span>
-                        <span class="like"> {{out}} </span>
-                      </div>
-      
-                      <div class="ml-4">
-                        <svg class="fill-black" width="20" height="20">
-                          <use xlink:href="#cart"></use>
-                        </svg>
-                        <span class="mx-2">|</span>
-                        <span class="buy"> {{b}} </span>
-                      </div>
-                      
-                      </div>
-                    </div>
             </nav>
           </div>
       </header>
@@ -175,7 +178,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="img card__img img-fluid" alt="Batman Lego Constructor">
@@ -207,17 +210,16 @@
                 </div>
                 <div class="d-flex flex-row justify-content-between align-items-baseline mt-2 px-1">
                     <div class="price">
-                      <span class="text-danger font-weight-bold">1 120</span>
+                      <span class="text-danger font-weight-bold">1 120000</span>
                       <span class="text-danger small font-weight-light align-top">грн</span>
                     </div>
                     <div>
-                        <button v-on:click="addA('first')" class="btn btn-link"> 
-                          <svg class="fill-success" width="20" height="20">
+                        <button @click="addA, addS" class="btn btn-link"> 
+                          <svg class="like" width="20" height="20">
                             <use xlink:href="#heart"></use>
                           </svg>
                         </button>
-                        <span :class="{active:first}">{{a.first}}</span>
-                        <button @click="addB" class="btn btn-link">
+                        <button @click="addB()" class="btn btn-link">
                           <svg class="fill-black" width="20" height="20">
                             <use xlink:href="#cart"></use>
                           </svg> 
@@ -233,7 +235,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="card-img-top card__img img-fluid" alt="Batman Lego Constructor">
@@ -269,12 +271,11 @@
                       <span class="text-danger small font-weight-light align-top">грн</span>
                     </div>
                     <div>
-                        <button v-on:click="addA('second')" class="btn btn-link"> 
+                        <button @click="addA" class="btn btn-link"> 
                           <svg class="fill-success" width="20" height="20">
                             <use xlink:href="#heart"></use>
                           </svg>
                         </button>
-                        <span>{{a.second}}</span>
                         <button @click="addB" class="btn btn-link">
                           <svg class="fill-black" width="20" height="20">
                             <use xlink:href="#cart"></use>
@@ -291,7 +292,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="card-img-top card__img img-fluid" alt="Batman Lego Constructor">
@@ -348,7 +349,7 @@
             <div class="col">
               <div href="#" class="card h-100 p-2">
                 <span class="badge sale-sign bg-danger text-center rounded-circle d-flex align-items-center" style="width: 50px; height: 50px;">
-                  <span class="text-white small font-weight-bold mx-auto">-21%</span>
+                  <span class="text-white font-weight-bold mx-auto">-21%</span>
                 </span>
                 <a href="#" class="card-img__wrap">
                   <img src="img/batmobile.jpg" class="card-img-top card__img img-fluid" alt="Batman Lego Constructor">
@@ -663,11 +664,6 @@
                             <use xlink:href="#insta"></use>
                           </svg> 
                         </a>
-                        <a href="" class="badge bg-light rounded-circle d-flex justify-content-center align-items-center mx-auto " style="width: 42px; height: 42px;">
-                          <svg class="fill-black" width="30" height="30">
-                            <use xlink:href="#vk"></use>
-                          </svg> 
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -955,7 +951,7 @@
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
       <script src="js/main.min.js"></script>
 
-      <script src="nouislider.js"></script>
+
 
 </body>
 </html>
